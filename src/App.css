@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+html {
+    background: #eee;
+}
+
+body > span {
+  width: 100vw;
   text-align: center;
+  color: grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-width: 600px) {
+  .box {
+      width: 90vw;
+      height: 80vh;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .wave {
+      top: 85%;
+  }
+
+  #weathercon {
+      font-size: 5em;
+  }
+
+  .info {
+      font-size: 1.5em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 500px) {
+  .box {
+      height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .wave {
+      top: 115%;
   }
 }
